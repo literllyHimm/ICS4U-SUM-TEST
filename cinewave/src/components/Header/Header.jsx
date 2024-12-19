@@ -3,10 +3,8 @@ import logo from "../../assets/others/logo.png";
 import profile_src from "../../assets/others/profile.jpg";
 import { Suspense, lazy, useContext, useEffect, useState } from "react";
 import { SharedContext } from "../../SharedContext";
-
 import { RiMenu4Fill } from "react-icons/ri";
 import { BiChevronLeft, BiSearchAlt } from "react-icons/bi";
-
 import { Link } from "react-router-dom";
 import Loading from "../Loading/Loading";
 import { Search } from "../../Data/Data";
@@ -17,7 +15,6 @@ const Header = () => {
     useContext(SharedContext);
   const [ActivateSearch, setActivateSearch] = useState(false);
   const [SearchValue, setSearchValue] = useState("");
-
   const [searchResult, setSearchResult] = useState(null);
 
   useEffect(() => {
@@ -85,7 +82,7 @@ const Header = () => {
         )}
 
         <Link to="/">
-          <h2>Movilla</h2>
+          <h2>CineWave</h2>
         </Link>
       </div>
 
@@ -151,6 +148,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+};  
 
 export default Header;

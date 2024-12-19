@@ -2,15 +2,12 @@ import "./Navigation.scss";
 import Nav from "./NavIcon/Nav";
 import { useContext } from "react";
 import { SharedContext } from "../../SharedContext";
-
 import { RiMenu4Fill } from "react-icons/ri";
-
 import { RiHome5Line } from "react-icons/ri";
 import { FiStar } from "react-icons/fi";
 import { BiLibrary } from "react-icons/bi";
 import { MdOutlineMovie } from "react-icons/md";
 import { PiTelevision } from "react-icons/pi";
-
 import { MdOutlineFormatPaint } from "react-icons/md";
 
 const Navigation = () => {

@@ -6,7 +6,6 @@ import { MdOutlineColorLens } from "react-icons/md";
 import { VscSettings } from "react-icons/vsc";
 import { IoMdHelpCircleOutline } from "react-icons/io";
 import { IoLogOutOutline } from "react-icons/io5";
-
 import { useContext } from "react";
 import { SharedContext } from "../../SharedContext";
 
