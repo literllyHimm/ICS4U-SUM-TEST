@@ -1,11 +1,8 @@
 import Featured from "../../components/Featured/Featured";
 import MovieSection from "../../components/MovieSection/MovieSection";
 import Movie from "../../components/Movie/Movie";
-
-import dune from "../../assets/movies/dune.png";
 import fav from "../../assets/movies/fav.gif";
 import Genre from "../../components/Genre/Genre";
-
 import action from "../../assets/genre/action.png";
 import adventure from "../../assets/genre/adventure.png";
 import animated from "../../assets/genre/animated.png";
@@ -21,7 +18,6 @@ import music from "../../assets/genre/music.jpg";
 import mystery from "../../assets/genre/mystery.jpg";
 import tvmovie from "../../assets/genre/tvmovie.jpg";
 import thriller from "../../assets/genre/thriller.jpg";
-
 import { useRouteLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchBookmarks, fetchFavorites } from "../../Data/Data";

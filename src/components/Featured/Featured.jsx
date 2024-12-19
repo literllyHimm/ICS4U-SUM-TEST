@@ -1,5 +1,4 @@
 import "./Featured.scss";
-
 import { FiBookmark, FiStar } from "react-icons/fi";
 import MovieInfo from "../Movie/MovieInfo/MovieInfo";
 import { GoShare } from "react-icons/go";

@@ -1,7 +1,6 @@
 import "./SingleMovie.scss";
 import Movie from "../../components/Movie/Movie";
 import Cast from "../../components/CastProfile/Cast";
-
 import { BiShareAlt, BiStar } from "react-icons/bi";
 import { GoShare } from "react-icons/go";
 import { FiBookmark, FiChevronsDown, FiChevronsUp } from "react-icons/fi";
