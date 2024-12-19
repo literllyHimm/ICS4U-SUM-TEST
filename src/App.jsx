@@ -8,15 +8,11 @@ import { Outlet, useNavigation } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Profile from "./components/Profile/Profile";
 import ResetScrollPosition from "./components/ResetScrollPosition/ResetScrollPosition";
-const MobileProfile = lazy(() =>
-  import("./components/MobileProfile/MobileProfile")
-);
+
 import Loading from "./components/Loading/Loading";
 import Process from "./components/Process/Process";
 
-const MobileNavigation = lazy(() =>
-  import("./components/MobileNavigation/MobileNavigation")
-);
+
 
 function App() {
   const [theme, settheme] = useState("dark");
