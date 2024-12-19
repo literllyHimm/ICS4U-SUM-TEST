@@ -1,0 +1,104 @@
+.profile_info {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: var(--bg-darker);
+  border-radius: 12px;
+  border: 1px solid var(--universal-color);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 3px 3px 10px #00000041;
+  transform-origin: right;
+  transform: translate(50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+
+  &.show {
+    transform: translate(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--universal-color);
+
+    img {
+      height: 50px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: var(--bg-dark);
+      object-fit: cover;
+      border: 2px solid var(--universal-color);
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .username {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      span {
+        font-size: 18px;
+      }
+
+      .email {
+        font-size: 14px;
+        color: var(--text-color-alt);
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    gap: 4px;
+
+    li {
+      padding: 12px 18px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        font-size: 20px;
+      }
+
+      &:hover {
+        background-color: var(--universal-color);
+      }
+
+      &.logout {
+        &:hover {
+          background-color: #ff000044;
+          border: 1px solid #ff000060;
+        }
+      }
+    }
+  }
+
+  button {
+    padding: 8px 25px;
+    background-color: var(--accent-color);
+    border-radius: 100px;
+    border: 1px solid var(--universal-color);
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.2s ease;
+    font-family: poppins;
+  }
+}
